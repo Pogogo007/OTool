@@ -45,7 +45,7 @@ class WizardGeneration(QWizard):
 
         xml_root = self.widget.toXML(name, icon)
 
-        with open(path_plugin_folder + name + ".myo", "w") as file:
+        with open(path_plugin_folder + name + ".xml", "w") as file:
             data = ET.tostring(xml_root, "unicode")
             file.write(data)
 

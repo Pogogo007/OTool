@@ -212,7 +212,7 @@ class OSelector(MainWindow):
         xml_file, _filter = QFileDialog.getOpenFileName(self, "Open file",
                                                         get_config().get("PATHS", "installFolder") + "/" + name + "/" +
                                                         get_config().get("PATHS", "pluginFolder"),
-                                                        "MyOsa file (*.myo)")
+                                                        "MyOsa file (*.xml)")
         if xml_file:
             log.info("Loading xml_file : " + xml_file)
             duplicate = self.navMenu.addXML(xml_file, animations)
